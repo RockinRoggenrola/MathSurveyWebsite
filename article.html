@@ -89,7 +89,7 @@
         article = article.replace("-"," ")
       }
       console.log("articles/"+type+"/"+article+".pdf")
-  		var adobeDCView = new AdobeDC.View({clientId: "87f6c9042c974b48819f07b5ad2b68f5", divId: "adobe-dc-view"});
+  		var adobeDCView = new AdobeDC.View({clientId: "adb1708fa4df436f9102fc3202c10379", divId: "adobe-dc-view"});
   		adobeDCView.previewFile({
   			content:{location: {url: "articles/"+type+"/"+article+".pdf"}},
   			metaData:{fileName: article+".pdf"}
