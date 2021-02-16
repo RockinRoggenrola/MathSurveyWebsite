@@ -6,16 +6,15 @@
   <meta name="description" content="Math Survey">
   <meta name="keywords" content="Stuyvesant, Math, CS, Mathematics, Computer Science, Research">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="image" content="https://stuysurvey.com/soc2.png">
+  <meta name="image" content="soc2.png">
   <meta property="og:title" content="Math Survey">
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://stuysurvey.com/soc2.png">
-  <meta property="og:description" content="The Largest Math Publication Written by Stuyvesant Students">
-  <meta property="og:url" content="https://stuysurvey.com">
+  <meta property="og:image" content="soc2.png">
+  <meta property="og:description" content="Official Math Department Publication in Stuyvesant since 1927">
+  <meta property="og:url" content="">
   <meta property="fb:app_id" content="712553486189960">
 
-    <title>Math and CS Research</title>
-
+    <title>Math Survey</title>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/"> -->
 
     <!-- Bootstrap core CSS -->
@@ -30,9 +29,22 @@
 
 
     <style>
-.footer{ 
-	padding-bottom: 10px;
-	padding-top: 10px;
+	.topright {
+	background-color: #fffff; /* Green */
+ 	border: none;
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+	padding: 12px 30px;
+  	font-size: 16px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 0px;
+	}
+   	.footer{ 
+	padding-bottom: 0px;
+	padding-top: 0px;
      	  position: fixed;     
       	 text-align: center;    
       	 bottom: 0px; 
@@ -57,7 +69,14 @@
         font-size: 2.5rem;
         text-align: center;
       }
+      .feature {
+	color = purple;
+      }
+      .puzzle {
+	color = red;
+      }
     </style>
+
     <!-- Custom styles for this template -->
     <!-- <link href="./Blog Template · Bootstrap1_files/css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
@@ -67,13 +86,15 @@
  <center><h6 class="p-2 text-muted"><a class="topright" color="white" href="https://forms.gle/dH64Mm4eGSWMdnFD8">Newsletter Sign Up</a></h6></center>
 </div>
   </head>
+
   <body class="vsc-initialized" style="">
+
     <div class="container">
   <header class="blog-header py-3">
     <center>
       <a class="blog-header-logo text-dark" href="./index.html"><img src='logo.png' width='20%'></a><br>
       <h6>The official publication of the Stuyvesant Math Department since 1927</h6>
-    </center>
+    </center> 
   </header>
 
   <div class="nav-scroller py-1 mb-2">
@@ -86,87 +107,108 @@
       <a class="p-2 text-muted" href="puzzles.html">Puzzles</a>
       <a class="p-2 text-muted" href="article.html?type=contributors&article=fall2020">Contributors</a>
       <a class="p-2 text-muted" href="archive.html">Archive</a>
-      <a class="p-2 text-muted" href="visualizations.html">Visualizations</a>
+      <a class="p-2 text-muted" href="visualizations.html"  target="_blank">Visualizations</a>
     </nav>
   </div>
 
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark row">
 
+    <div class="col-md-6 px-0">
+      <h1 class="display-4">Election Forecasting</h1>
+
+      <p class="lead my-3">A glimpse at what goes into predicting the results of an election and a case study on this year’s presidential contest.</p>
+      <p class="lead mb-0"><a href="article.html?type=applied&article=Election-Forecasting" class="text-white font-weight-bold stretched-link">Continue reading...</a></p>
+
+    </div>
+    <div class="col-md-6 px-0">
+      <center><img src="articles/applied/FinalPredictions.png" height='220' ></center>
+    </div>
+  </div>
 
   <div class="row mb-2">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong style="color: purple;">AP CS<br><em>By Andrew Juang</em></strong>
-          <h4 class="mb-0">Most sophomores were eager to show off their elaborate programs they had spent countless nights trying to complete. Some students envisioned themselves upon the golden throne of another advanced placement course. The room dimmed as the competitions started.</h4>
-          <a href="article.html?type=feature&article=AP-CS" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2 text-success">Ray Tracing<em> By Ian Graham</em></strong>
+          <h4 class="mb-0">Explore the world of 3D rendering, an incredible intersection between mathematics, computer science, and art.</h4>
+          <a href="article.html?type=computerscience&article=Ray-Tracing" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="articles/feature/apcs.jpg" height='250'>
+          <img src="articles/computerscience/rayTracing.jpg" height='250' width='235'>
         </div>
       </div>
     </div>
-
-  </div>
-  <div class="row mb-2">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong style="color: purple;">Online Math Team<br><em>By Vincent Lin</em></strong>
-          <h5 class="mb-0">The Stuyvesant math team had continued its operations during quarantine using a top-secret application called Zoom. Get a first-hand account into this confidential meeting and how the world’s greatest mysteries were solved.</h5>
+          <strong style="color: purple;">Online Math Team<em> By Vincent Lin</em></strong>
+          <h5 class="mb-0">The Stuyvesant math team had continued its operations during quarantine using a top-secret application called Zoom. Get a first-hand account into this confidential meeting.</h5>
           <a href="article.html?type=feature&article=Math-Team" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="articles/feature/mathteam.jpg" height='250'>
+          <img src="articles/feature/mathteamcrop.jpg" height='250' width='200'>
         </div>
       </div>
     </div>
   </div>
   <div class="row mb-2">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong style="color: purple;">Precalc Panic<br><em>By Vincent Lin</em></strong>
-          <h5 class="mb-0">Today is my precalc test. There’s no need to study though; my class is allowed to use a reference sheet and I’ll make it during lunch with my notes from my notebook. However, upon reaching in my backpack, I tragically realize my notebook is not there...</h5>
-          <a href="article.html?type=feature&article=Precalc-Panic" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2 text-primary">Calculating a Fixed Distance<em> By Benjamin Gallai and Khizer Shahid</em></strong>
+          <h4 class="mb-0">An alternate derivation of a well known sum from calculus</h4><br>
+          <a href="article.html?type=problemsolving&article=Infinite-Summations" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="articles/feature/precalcpanic.jpg" height='250'>
+          <img src="articles/problemsolving/infinitesummations.png" height='250' width='250'>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="color: red;">Jammed-Up KenKen<em><br>By Edward Wu</em></strong>
+          <h5 class="mb-0">Tired of bland Kenkens? Test your logical thinking in the sweet flavor of Jammed-Up Kenken. A swirl of techniques and twists await!</h5>
+          <a href="article.html?type=puzzle&article=Jammed-Up-KenKen" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="articles/puzzle/kenken.png" height='250' width='250'>
         </div>
       </div>
     </div>
   </div>
   <div class="row mb-2">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong style="color: purple;">The Prime Donuts<br><em>By Joshua Gao</em></strong>
-          <h3 class="mb-0">Prime number? Donuts?!? Donuts for prime numbers? Learn about about the twin prime conjecture as two teams compete for Krispy Kreme donuts through applications of computer science and math.</h3>
-          <a href="article.html?type=feature&article=The-Prime-Donuts" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2 text-primary">Euler's Formula<em> By Maxwell Zen</em></strong>
+          <h5 class="mb-0">A proof of Euler's Formula, stating that V - E + F = 2 on planar graphs. Then, an application to prove that there are only 5 Platonic solids and only 13 Archimedean solids.</h5>
+          <a href="article.html?type=research&article=Eulers-Formula" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="articles/feature/donuts.jpg" height='250'>
+          <img src="articles/research/eulersformula.png" height='250' width='220'>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong style="color: orange;">Contributors</strong>
+          <h3 class="mb-0">Thank You to Our 2020-2021 Contributors</h3>
+          <a href="article.html?type=contributors&article=contributors" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="favicon3.png" height='250' width='250'>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 <br><br><br>
 <div class="footer">
 <a class="p-2 text-muted" href="sponsors.html">Sponsors</a>   |   <a class="p-2 text-muted" href="article.html?type=contributors&article=2019-2020"">Past Staff</a>   |   <a class="p-2 text-muted" href="contact.html">Contact Us</a>   |   <a class="p-2 text-muted" href="https://www.stuyactivities.org/stuymathsurvey">Join Us</a>   |   <a class="p-2 text-muted" href="https://stuy.enschool.org/apps/pages/index.jsp?uREC_ID=126659&type=d&termREC_ID=&pREC_ID=390036">Info Page</a>
 <h6>Website made by Mario Tutuncu-Macias, Haotian Gan, and Steven Rakhmanchik</h6>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-</body><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></html>
