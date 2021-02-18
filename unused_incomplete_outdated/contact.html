@@ -3,29 +3,21 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <meta charset="UTF-8">
-<<<<<<< HEAD
   <meta name="description" content="Stuyvesant Math Survey">
-  <meta name="keywords" content="Stuyvesant, Math, CS, Math Survey, Mathematics, Computer Science, Research">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="image" content="https://stuysurvey.com/soc2.png">
-  <meta property="og:title" content="Stuyvesant Math Survey">
-=======
-  <meta name="description" content="Math Survey">
   <meta name="keywords" content="Stuyvesant, Math, CS, Mathematics, Computer Science, Research">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="image" content="https://stuysurvey.com/soc2.png">
-  <meta property="og:title" content="Math Survey">
->>>>>>> origin/main
+  <meta name="image" content="soc2.png">
+  <meta property="og:title" content="Stuyvesant Math Survey">
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://stuysurvey.com/soc2.png">
+  <meta property="og:image" content="soc2.png">
   <meta property="og:description" content="Official Math Department Publication in Stuyvesant since 1927">
-  <meta property="og:url" content="https://stuymathsurvey.com/">
+  <meta property="og:url" content="">
   <meta property="fb:app_id" content="712553486189960">
 
-    <title>Math and CS Research</title>
+    <title>Math Survey</title>
 
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/"> -->
-
+<link rel="stylesheet" href="nl.css">
     <!-- Bootstrap core CSS -->
 <!-- <link href="./Blog Template · Bootstrap1_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,9 +30,19 @@
 
 
     <style>
-.footer{ 
-	padding-bottom: 10px;
-	padding-top: 10px;
+	.hide{
+	display:none;
+	}
+	.show{
+	display:block;
+	position:absolute;
+	left: 200px;
+	top: 200px;
+	color: blue;
+	}
+   	.footer{ 
+	padding-bottom: 0px;
+	padding-top: 0px;
      	  position: fixed;     
       	 text-align: center;    
       	 bottom: 0px; 
@@ -76,12 +78,13 @@
 </div>
   </head>
   <body class="vsc-initialized" style="">
+ <a href="#" class="myButton">green</a>
     <div class="container">
   <header class="blog-header py-3">
     <center>
       <a class="blog-header-logo text-dark" href="./index.html"><img src='logo.png' width='20%'></a><br>
       <h6>The official publication of the Stuyvesant Math Department since 1927</h6>
-    </center>
+    </center> 
   </header>
 
   <div class="nav-scroller py-1 mb-2">
@@ -92,34 +95,56 @@
       <a class="p-2 text-muted" href="features.html">Features</a>
       <a class="p-2 text-muted" href="problemsolving.html">Problem Solving</a>
       <a class="p-2 text-muted" href="puzzles.html">Puzzles</a>
-      <a class="p-2 text-muted" href="article.html?type=contributors&article=fall2020">Contributors</a>
+      <a class="p-2 text-muted" href="article.html?type=contributors&article=contributors">Contributors</a>
       <a class="p-2 text-muted" href="archive.html">Archive</a>
       <a class="p-2 text-muted" href="visualizations.html">Visualizations</a>
     </nav>
   </div>
 
-
-
-  <div class="row mb-2">
-    <div class="col-md-12">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Ray Tracing<br><em>By Ian Graham</em></strong>
-          <h5 class="mb-0">The world of 3D rendering is an incredible intersection between mathematics, computer science, and art. In this article, we'll explore the basics of this fascinating field by understanding how optics and linear algebra can help us construct realistic images of 3D scenes.</h5>
-          <a href="article.html?type=computerscience&article=Ray-Tracing" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="articles/computerscience/rayTracing.jpg" height='250'>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('USER ID');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
 
 <br><br><br>
-<div class="footer">
-<a class="p-2 text-muted" href="sponsors.html">Sponsors</a>   |   <a class="p-2 text-muted" href="article.html?type=contributors&article=2019-2020"">Past Staff</a>   |   <a class="p-2 text-muted" href="contact.html">Contact Us</a>   |   <a class="p-2 text-muted" href="https://www.stuyactivities.org/stuymathsurvey">Join Us</a>   |   <a class="p-2 text-muted" href="https://stuy.enschool.org/apps/pages/index.jsp?uREC_ID=126659&type=d&termREC_ID=&pREC_ID=390036">Info Page</a>
+<div class="footer"><a class="p-2 text-muted" href="sponsors.html">Sponsors</a>   |   <a class="p-2 text-muted" href="paststaff.html">Past Staff</a>   |   <a class="p-2 text-muted" href="contact.html">Contact Us</a>   |   <a class="p-2 text-muted" href="https://www.stuyactivities.org/stuymathsurvey">Join Us</a>   |   <a class="p-2 text-muted" href="https://stuy.enschool.org/apps/pages/index.jsp?uREC_ID=126659&type=d&termREC_ID=&pREC_ID=390036">Info Page</a>
 <h6>Website made by Mario Tutuncu-Macias, Haotian Gan, and Steven Rakhmanchik</h6>
 </div>
 
@@ -131,7 +156,18 @@
 
 
 
+<script>
+var maxHeight = 0;
 
+$(".row").each(function () {
+    if ($(this).height() > maxHeight) {
+        maxHeight = $(this).height();
+    }
+});
+
+$(".row").height(maxHeight);
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
 </body><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

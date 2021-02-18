@@ -3,11 +3,11 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <meta charset="UTF-8">
-  <meta name="description" content="Stuyvesant Math Survey">
-  <meta name="keywords" content="Stuyvesant, Math, Math Survey, CS, Mathematics, Computer Science, Research">
+  <meta name="description" content="Math Survey">
+  <meta name="keywords" content="Stuyvesant, Math, CS, Math Survey, Mathematics, Computer Science, Research">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="image" content="https://stuysurvey.com/soc2.png">
-  <meta property="og:title" content="Stuyvesant Math Survey">
+  <meta property="og:title" content="Math Survey">
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://stuysurvey.com/soc2.png">
   <meta property="og:description" content="Official Math Department Publication in Stuyvesant since 1927">
@@ -28,8 +28,16 @@
 <link rel="icon" href="favicon2.png" sizes="32x32" type="image/png">
 <link rel="icon" href="favicon2.png" sizes="16x16" type="image/png">
 
-
     <style>
+.footer{
+	padding-bottom: 10px;
+	padding-top: 10px;
+     	  position: fixed;
+      	 text-align: center;
+      	 bottom: 0px;
+      	 width: 100%;
+	background: white;
+  	 }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -53,12 +61,17 @@
     <!-- <link href="./Blog Template · Bootstrap1_files/css" rel="stylesheet"> -->
     <!-- Custom styles for this template -->
     <!-- <link href="./Blog Template · Bootstrap1_files/blog.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="nl.css">
+<div class="topright">
+ <center><h6 class="p-2 text-muted"><a class="topright" color="white" href="https://forms.gle/dH64Mm4eGSWMdnFD8">Newsletter Sign Up</a></h6></center>
+</div>
   </head>
   <body class="vsc-initialized" style="">
     <div class="container">
   <header class="blog-header py-3">
     <center>
-      <a class="blog-header-logo text-dark" href="./index.html"><img src='logo.png' width='20%'></a>
+      <a class="blog-header-logo text-dark" href="./index.html"><img src='logo.png' width='20%'></a><br>
+      <h6>The official publication of the Stuyvesant Math Department since 1927</h6>
     </center>
   </header>
 
@@ -70,14 +83,14 @@
       <a class="p-2 text-muted" href="features.html">Features</a>
       <a class="p-2 text-muted" href="problemsolving.html">Problem Solving</a>
       <a class="p-2 text-muted" href="puzzles.html">Puzzles</a>
-      <a class="p-2 text-muted" href="research.html">Research</a>
-      <a class="p-2 text-muted" href="article.html?type=contributors&article=contributors">Contributors</a>
+      <a class="p-2 text-muted" href="article.html?type=contributors&article=fall2020">Contributors</a>
       <a class="p-2 text-muted" href="archive.html">Archive</a>
+      <a class="p-2 text-muted" href="visualizations.html">Visualizations</a>
     </nav>
   </div>
 
 
-  <div id="adobe-dc-view" height="500px"></div>
+  <div id="adobe-dc-view" height="500px" width="80%"></div>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script type="text/javascript">
   	document.addEventListener("adobe_dc_view_sdk.ready", function(){
@@ -89,7 +102,7 @@
         article = article.replace("-"," ")
       }
       console.log("articles/"+type+"/"+article+".pdf")
-  		var adobeDCView = new AdobeDC.View({clientId: "87f6c9042c974b48819f07b5ad2b68f5", divId: "adobe-dc-view"});
+  		var adobeDCView = new AdobeDC.View({clientId: "adb1708fa4df436f9102fc3202c10379", divId: "adobe-dc-view"});
   		adobeDCView.previewFile({
   			content:{location: {url: "articles/"+type+"/"+article+".pdf"}},
   			metaData:{fileName: article+".pdf"}
@@ -110,4 +123,20 @@
 
 </body><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<<<<<<< HEAD
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></html>
+=======
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</div>
+
+
+<br><br><br>
+<div class="footer">
+<a class="p-2 text-muted" href="sponsors.html">Sponsors</a>   |   <a class="p-2 text-muted" href="article.html?type=contributors&article=2019-2020"">Past Staff</a>   |   <a class="p-2 text-muted" href="contact.html">Contact Us</a>   |   <a class="p-2 text-muted" href="https://www.stuyactivities.org/stuymathsurvey">Join Us</a>   |   <a class="p-2 text-muted" href="https://stuy.enschool.org/apps/pages/index.jsp?uREC_ID=126659&type=d&termREC_ID=&pREC_ID=390036">Info Page</a>
+<h6>Website made by Mario Tutuncu-Macias, Haotian Gan, and Steven Rakhmanchik</h6>
+</div>
+
+</html>
+
+
+>>>>>>> origin/main
