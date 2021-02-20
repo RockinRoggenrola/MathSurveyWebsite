@@ -24,3 +24,5 @@
 [0220/174239.917:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
 [0220/174336.956:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0220/174336.959:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
+[0220/174539.475:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0220/174539.477:ERROR:crash_report_database_win.cc(606)] CreateDirectory C:\ProgramData\Safe Family\Logs: Access is denied. (0x5)
